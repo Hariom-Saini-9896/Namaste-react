@@ -4,6 +4,7 @@
   "description": "Namaste react course",
   "scripts": {
     "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -17,10 +18,15 @@
   },
   "homepage": "https://github.com/Hariom-Saini-9896/Namaste-react#readme",
   "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.15.4"
   },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
-  }
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
 }

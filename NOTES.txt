@@ -1,0 +1,6 @@
+React.createElement() => gives us Object containig all the information about the element.
+                         And what happens with the object, this object is than converted into HTML code and this put in the DOM.
+
+JSX is not HTML, its html  like syntax.
+In JSX for styling we use camelCasing like; <h1 id = "title" tabIndex = "1" className  = "hello">Hello world.</h1>
+And class is like className
