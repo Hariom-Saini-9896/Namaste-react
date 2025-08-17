@@ -160,7 +160,7 @@
       });
     }
   }
-})({"icAAj":[function(require,module,exports,__globalThis) {
+})({"frqA7":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -168,7 +168,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "cd1566bccb65f72e";
+module.bundle.HMR_BUNDLE_ID = "4c0c6dc62c54e4d8";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -666,21 +666,25 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"blcJa":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$4931 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$4931.init();
+},{}],"hh6uc":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$4089 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$4089.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
 var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4931.prelude(module);
+$parcel$ReactRefreshHelpers$4089.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _indexCss = require("./index.css");
+var _indexCss = require("../index.css");
+var _header = require("./components/Header"); // For default imnport no need to include {}. For default export its not necessary to have the same name. It can be NewHeader instead of Header
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _footer = require("./components/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _body = require("./components/Body");
+var _bodyDefault = parcelHelpers.interopDefault(_body);
 // done by pure JS
 // const heading = document.createElement("h1");
 // heading.textContent = "I create this element through script.";
@@ -747,485 +751,41 @@ var _indexCss = require("./index.css");
       - Links
       - Copy Rights      
        
-*/ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        href: "/",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "logo",
-            src: "https://lh3.googleusercontent.com/Em7AHf7XBH_RtGfCBVXz9RH8SM_pHkj3xPP-yd3cRguY1_Jc8fmqgx6WxnvGVyPV5xs5gL3HCD0FCuv6Xo4CwoY6ak4=w256-rw",
-            alt: "logo"
-        }, void 0, false, {
-            fileName: "App.js",
-            lineNumber: 84,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 83,
-        columnNumber: 21
-    }, undefined);
-_c = Title;
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 88,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 91,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 92,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 93,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Cart"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 94,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "App.js",
-                    lineNumber: 90,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 89,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 87,
-        columnNumber: 10
-    }, undefined);
-};
-_c1 = Header;
-// Let access burger data dynamicaly (Not using this because we using Swiggy API)
+*/ // Let access burger data dynamicaly (Not using this because we using Swiggy API)
 // const burgerKing = {
 //   name: "Burger King",
 //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDcH_MxdsTsK6KMVon-Ybfa2WiT-R70ZjWw&s",
 //   cousines: ["Burger", "American"],
 //   rating: "4.2"
 // }
-// Data form live Swiggy API
-const restaurantList = [
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391100",
-                "name": "Indori pizza 8 inches ",
-                "category": "Pizza",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/19/bc7c1f78-3d4a-4729-95de-29b13e6d19b5_6a35dc3a-44a8-4429-9859-eed528342aa6.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 16900,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "99114152"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391096",
-                "name": "Garlic pizza 8 inches ",
-                "category": "Pizza",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/24/5d9f4d70-ab7d-4df5-a083-64d434e90314_70db7115-cd2c-4c68-adcb-55bd9eff9ac9.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 17500,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "99114151"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391117",
-                "name": "Brownie chocolate shake",
-                "category": "Chocolate Shake",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/b175b287-5aee-42dd-bcf3-dce9e5cfa29d_6e0673a8-ce3a-4276-ba5f-6f9fbefac0a5.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 16000,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "33335116"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391112",
-                "name": "Crunchy chocolate shake",
-                "category": "Chocolate Shake",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/b5d4509a-a216-4d5b-8d4a-565713837ba5_7a40712d-7036-4802-966f-06deec1a4b40.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 14500,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "33335155"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391110",
-                "name": "Dark chocolate shake",
-                "category": "Chocolate Shake",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/5e05da78-2c53-4f5f-8ee3-79f226c600b7_aa3ccb72-12a8-47fc-9574-9e9a2801a3dc.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 13000,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "33335157"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391113",
-                "name": "Energy chocolate shake",
-                "category": "Chocolate Shake",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/39700056-2ac7-4cc2-b1c7-984acae08acb_0b83f445-a96d-47dc-99d6-8eaecb22e953.jpeg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 14000,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "33335170"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391122",
-                "name": "Veg manchurian",
-                "category": "Chinese Menu",
-                "description": "A flavorful and savory blend of vegetables in a delicious, savory sauce.",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/24/d2889741-4da4-4039-835c-d1c507e20dd3_476bbfac-71dc-49ff-8355-c2b74d8814e1.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 14500,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {
-                    "text": "Bestseller",
-                    "textColor": "#ffffff",
-                    "topBackgroundColor": "#d53d4c",
-                    "bottomBackgroundColor": "#b02331"
-                },
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "isBestseller": true,
-                "ratings": {
-                    "aggregatedRating": {
-                        "rating": "5.0",
-                        "ratingCount": "3 ratings",
-                        "ratingCountV2": "3"
-                    },
-                    "ratingsPresentationConfig": {
-                        "bgGradient": {
-                            "colours": [
-                                "#C8F9E5",
-                                "#FFFFFF"
-                            ],
-                            "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
-                        },
-                        "ratingIconColor": "rating_very_good",
-                        "ratingTextColor": "rating_very_good",
-                        "ratingCountTextColor": "rating_very_good",
-                        "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
-                        "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
-                    }
-                },
-                "parentId": "50243796"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391126",
-                "name": "Fried rice",
-                "category": "Chinese Menu",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/19/65263b26-0e14-4010-8461-b587458aeb40_7a715270-e1be-4c81-9501-6554a7f703e1.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 14000,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "50243760"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    },
-    {
-        "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
-            "info": {
-                "id": "161391128",
-                "name": "Veg hakka noodles",
-                "category": "Chinese Menu",
-                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/19/1268417d-4762-4de7-8839-c06e4441f674_0c7e4ddd-c7fa-4979-8da5-7ce185afdcd1.jpg",
-                "inStock": 1,
-                "isVeg": 1,
-                "price": 14000,
-                "variants": {},
-                "variantsV2": {},
-                "itemAttribute": {
-                    "vegClassifier": "VEG"
-                },
-                "ribbon": {},
-                "showImage": true,
-                "itemBadge": {},
-                "badgesV2": {},
-                "ratings": {
-                    "aggregatedRating": {}
-                },
-                "parentId": "33335336"
-            },
-            "analytics": {},
-            "hideRestaurantDetails": true
-        }
-    }
-];
-// getting props on the fly
-const ResturantCard = ({ price, category, name, imageId })=>{
-    // console.log(restaurant);
-    //  Destructuring this restaurant. Its good but what i want now is want destructuring in parameters
-    // const {imageId, name, category, price} = restaurant.card.info;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fill/" + imageId,
-                alt: "Burger"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 398,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: name
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 399,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: category
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 400,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: price
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 401,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 397,
-        columnNumber: 10
-    }, undefined);
-};
-_c2 = ResturantCard;
-// Passing props
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "resturant-list",
-        children: restaurantList.map((restaurant)=>{
-            return /*#__PURE__*/ (0, _react.createElement)(ResturantCard, {
-                ...restaurant.card.info,
-                key: restaurant.card.info.id,
-                __source: {
-                    fileName: "App.js",
-                    lineNumber: 422,
-                    columnNumber: 14
-                },
-                __self: undefined
-            });
-        })
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 407,
-        columnNumber: 10
-    }, undefined);
-};
-_c3 = Body;
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-        children: "Footer"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 427,
-        columnNumber: 10
-    }, undefined);
-};
-_c4 = Footer;
 const ApplayOut = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 432,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 100,
                     columnNumber: 7
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 433,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 101,
                     columnNumber: 7
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 434,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 102,
                     columnNumber: 7
                 }, undefined)
             ]
         }, void 0, true)
     }, void 0, false);
 };
-_c5 = ApplayOut;
+_c = ApplayOut;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root")); // the root element for this h1 element is the div with id = root. and works aas root element for this h1 element
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ApplayOut, {}, "app-layout", false, {
-    fileName: "App.js",
-    lineNumber: 439,
+    fileName: "src/App.js",
+    lineNumber: 107,
     columnNumber: 13
 }, undefined)); // this render function injects this heading elements inside the DOM and its render over the browser window. Render is used to modify our DOMand it overwrite the stuff inside root element.
  /*
@@ -1270,20 +830,226 @@ const config = [
 ]
 
 */ 
-var _c, _c1, _c2, _c3, _c4, _c5;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "Header");
-$RefreshReg$(_c2, "ResturantCard");
-$RefreshReg$(_c3, "Body");
-$RefreshReg$(_c4, "Footer");
-$RefreshReg$(_c5, "ApplayOut");
+var _c;
+$RefreshReg$(_c, "ApplayOut");
 
-  $parcel$ReactRefreshHelpers$4931.postlude(module);
+  $parcel$ReactRefreshHelpers$4089.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react/jsx-dev-runtime":"dVPUn","./index.css":"giGSC"}],"jMk1U":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../index.css":"giGSC","./components/Header":"3PJ6N","./components/Footer":"lq1kZ","./components/Body":"loQlg"}],"dVPUn":[function(require,module,exports,__globalThis) {
+'use strict';
+module.exports = require("ee51401569654d91");
+
+},{"ee51401569654d91":"gnlQf"}],"gnlQf":[function(require,module,exports,__globalThis) {
+/**
+ * @license React
+ * react-jsx-dev-runtime.development.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    function getComponentNameFromType(type) {
+        if (null == type) return null;
+        if ("function" === typeof type) return type.$$typeof === REACT_CLIENT_REFERENCE ? null : type.displayName || type.name || null;
+        if ("string" === typeof type) return type;
+        switch(type){
+            case REACT_FRAGMENT_TYPE:
+                return "Fragment";
+            case REACT_PROFILER_TYPE:
+                return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+                return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+                return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+                return "SuspenseList";
+            case REACT_ACTIVITY_TYPE:
+                return "Activity";
+        }
+        if ("object" === typeof type) switch("number" === typeof type.tag && console.error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), type.$$typeof){
+            case REACT_PORTAL_TYPE:
+                return "Portal";
+            case REACT_CONTEXT_TYPE:
+                return (type.displayName || "Context") + ".Provider";
+            case REACT_CONSUMER_TYPE:
+                return (type._context.displayName || "Context") + ".Consumer";
+            case REACT_FORWARD_REF_TYPE:
+                var innerType = type.render;
+                type = type.displayName;
+                type || (type = innerType.displayName || innerType.name || "", type = "" !== type ? "ForwardRef(" + type + ")" : "ForwardRef");
+                return type;
+            case REACT_MEMO_TYPE:
+                return innerType = type.displayName || null, null !== innerType ? innerType : getComponentNameFromType(type.type) || "Memo";
+            case REACT_LAZY_TYPE:
+                innerType = type._payload;
+                type = type._init;
+                try {
+                    return getComponentNameFromType(type(innerType));
+                } catch (x) {}
+        }
+        return null;
+    }
+    function testStringCoercion(value) {
+        return "" + value;
+    }
+    function checkKeyStringCoercion(value) {
+        try {
+            testStringCoercion(value);
+            var JSCompiler_inline_result = !1;
+        } catch (e) {
+            JSCompiler_inline_result = !0;
+        }
+        if (JSCompiler_inline_result) {
+            JSCompiler_inline_result = console;
+            var JSCompiler_temp_const = JSCompiler_inline_result.error;
+            var JSCompiler_inline_result$jscomp$0 = "function" === typeof Symbol && Symbol.toStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            JSCompiler_temp_const.call(JSCompiler_inline_result, "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.", JSCompiler_inline_result$jscomp$0);
+            return testStringCoercion(value);
+        }
+    }
+    function getTaskName(type) {
+        if (type === REACT_FRAGMENT_TYPE) return "<>";
+        if ("object" === typeof type && null !== type && type.$$typeof === REACT_LAZY_TYPE) return "<...>";
+        try {
+            var name = getComponentNameFromType(type);
+            return name ? "<" + name + ">" : "<...>";
+        } catch (x) {
+            return "<...>";
+        }
+    }
+    function getOwner() {
+        var dispatcher = ReactSharedInternals.A;
+        return null === dispatcher ? null : dispatcher.getOwner();
+    }
+    function UnknownOwner() {
+        return Error("react-stack-top-frame");
+    }
+    function hasValidKey(config) {
+        if (hasOwnProperty.call(config, "key")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+            if (getter && getter.isReactWarning) return !1;
+        }
+        return void 0 !== config.key;
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+        function warnAboutAccessingKey() {
+            specialPropKeyWarningShown || (specialPropKeyWarningShown = !0, console.error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)", displayName));
+        }
+        warnAboutAccessingKey.isReactWarning = !0;
+        Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: !0
+        });
+    }
+    function elementRefGetterWithDeprecationWarning() {
+        var componentName = getComponentNameFromType(this.type);
+        didWarnAboutElementRef[componentName] || (didWarnAboutElementRef[componentName] = !0, console.error("Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."));
+        componentName = this.props.ref;
+        return void 0 !== componentName ? componentName : null;
+    }
+    function ReactElement(type, key, self, source, owner, props, debugStack, debugTask) {
+        self = props.ref;
+        type = {
+            $$typeof: REACT_ELEMENT_TYPE,
+            type: type,
+            key: key,
+            props: props,
+            _owner: owner
+        };
+        null !== (void 0 !== self ? self : null) ? Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            get: elementRefGetterWithDeprecationWarning
+        }) : Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            value: null
+        });
+        type._store = {};
+        Object.defineProperty(type._store, "validated", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: 0
+        });
+        Object.defineProperty(type, "_debugInfo", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: null
+        });
+        Object.defineProperty(type, "_debugStack", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: debugStack
+        });
+        Object.defineProperty(type, "_debugTask", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: debugTask
+        });
+        Object.freeze && (Object.freeze(type.props), Object.freeze(type));
+        return type;
+    }
+    function jsxDEVImpl(type, config, maybeKey, isStaticChildren, source, self, debugStack, debugTask) {
+        var children = config.children;
+        if (void 0 !== children) {
+            if (isStaticChildren) {
+                if (isArrayImpl(children)) {
+                    for(isStaticChildren = 0; isStaticChildren < children.length; isStaticChildren++)validateChildKeys(children[isStaticChildren]);
+                    Object.freeze && Object.freeze(children);
+                } else console.error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+            } else validateChildKeys(children);
+        }
+        if (hasOwnProperty.call(config, "key")) {
+            children = getComponentNameFromType(type);
+            var keys = Object.keys(config).filter(function(k) {
+                return "key" !== k;
+            });
+            isStaticChildren = 0 < keys.length ? "{key: someKey, " + keys.join(": ..., ") + ": ...}" : "{key: someKey}";
+            didWarnAboutKeySpread[children + isStaticChildren] || (keys = 0 < keys.length ? "{" + keys.join(": ..., ") + ": ...}" : "{}", console.error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', isStaticChildren, children, keys, children), didWarnAboutKeySpread[children + isStaticChildren] = !0);
+        }
+        children = null;
+        void 0 !== maybeKey && (checkKeyStringCoercion(maybeKey), children = "" + maybeKey);
+        hasValidKey(config) && (checkKeyStringCoercion(config.key), children = "" + config.key);
+        if ("key" in config) {
+            maybeKey = {};
+            for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
+        } else maybeKey = config;
+        children && defineKeyPropWarningGetter(maybeKey, "function" === typeof type ? type.displayName || type.name || "Unknown" : type);
+        return ReactElement(type, children, self, source, getOwner(), maybeKey, debugStack, debugTask);
+    }
+    function validateChildKeys(node) {
+        "object" === typeof node && null !== node && node.$$typeof === REACT_ELEMENT_TYPE && node._store && (node._store.validated = 1);
+    }
+    var React = require("58362d9d82be395f"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+    Symbol.for("react.provider");
+    var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+        return null;
+    };
+    React = {
+        react_stack_bottom_frame: function(callStackForError) {
+            return callStackForError();
+        }
+    };
+    var specialPropKeyWarningShown;
+    var didWarnAboutElementRef = {};
+    var unknownOwnerDebugStack = React.react_stack_bottom_frame.bind(React, UnknownOwner)();
+    var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
+    var didWarnAboutKeySpread = {};
+    exports.Fragment = REACT_FRAGMENT_TYPE;
+    exports.jsxDEV = function(type, config, maybeKey, isStaticChildren, source, self) {
+        var trackActualOwner = 1e4 > ReactSharedInternals.recentlyCreatedOwnerStacks++;
+        return jsxDEVImpl(type, config, maybeKey, isStaticChildren, source, self, trackActualOwner ? Error("react-stack-top-frame") : unknownOwnerDebugStack, trackActualOwner ? createTask(getTaskName(type)) : unknownOwnerDebugTask);
+    };
+})();
+
+},{"58362d9d82be395f":"jMk1U"}],"jMk1U":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("a569817e6ea559f6");
 
@@ -18779,217 +18545,599 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"dVPUn":[function(require,module,exports,__globalThis) {
-'use strict';
-module.exports = require("ee51401569654d91");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"giGSC":[function() {},{}],"3PJ6N":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$d118 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$d118.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d118.prelude(module);
 
-},{"ee51401569654d91":"gnlQf"}],"gnlQf":[function(require,module,exports,__globalThis) {
-/**
- * @license React
- * react-jsx-dev-runtime.development.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    function getComponentNameFromType(type) {
-        if (null == type) return null;
-        if ("function" === typeof type) return type.$$typeof === REACT_CLIENT_REFERENCE ? null : type.displayName || type.name || null;
-        if ("string" === typeof type) return type;
-        switch(type){
-            case REACT_FRAGMENT_TYPE:
-                return "Fragment";
-            case REACT_PROFILER_TYPE:
-                return "Profiler";
-            case REACT_STRICT_MODE_TYPE:
-                return "StrictMode";
-            case REACT_SUSPENSE_TYPE:
-                return "Suspense";
-            case REACT_SUSPENSE_LIST_TYPE:
-                return "SuspenseList";
-            case REACT_ACTIVITY_TYPE:
-                return "Activity";
-        }
-        if ("object" === typeof type) switch("number" === typeof type.tag && console.error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), type.$$typeof){
-            case REACT_PORTAL_TYPE:
-                return "Portal";
-            case REACT_CONTEXT_TYPE:
-                return (type.displayName || "Context") + ".Provider";
-            case REACT_CONSUMER_TYPE:
-                return (type._context.displayName || "Context") + ".Consumer";
-            case REACT_FORWARD_REF_TYPE:
-                var innerType = type.render;
-                type = type.displayName;
-                type || (type = innerType.displayName || innerType.name || "", type = "" !== type ? "ForwardRef(" + type + ")" : "ForwardRef");
-                return type;
-            case REACT_MEMO_TYPE:
-                return innerType = type.displayName || null, null !== innerType ? innerType : getComponentNameFromType(type.type) || "Memo";
-            case REACT_LAZY_TYPE:
-                innerType = type._payload;
-                type = type._init;
-                try {
-                    return getComponentNameFromType(type(innerType));
-                } catch (x) {}
-        }
-        return null;
-    }
-    function testStringCoercion(value) {
-        return "" + value;
-    }
-    function checkKeyStringCoercion(value) {
-        try {
-            testStringCoercion(value);
-            var JSCompiler_inline_result = !1;
-        } catch (e) {
-            JSCompiler_inline_result = !0;
-        }
-        if (JSCompiler_inline_result) {
-            JSCompiler_inline_result = console;
-            var JSCompiler_temp_const = JSCompiler_inline_result.error;
-            var JSCompiler_inline_result$jscomp$0 = "function" === typeof Symbol && Symbol.toStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
-            JSCompiler_temp_const.call(JSCompiler_inline_result, "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.", JSCompiler_inline_result$jscomp$0);
-            return testStringCoercion(value);
-        }
-    }
-    function getTaskName(type) {
-        if (type === REACT_FRAGMENT_TYPE) return "<>";
-        if ("object" === typeof type && null !== type && type.$$typeof === REACT_LAZY_TYPE) return "<...>";
-        try {
-            var name = getComponentNameFromType(type);
-            return name ? "<" + name + ">" : "<...>";
-        } catch (x) {
-            return "<...>";
-        }
-    }
-    function getOwner() {
-        var dispatcher = ReactSharedInternals.A;
-        return null === dispatcher ? null : dispatcher.getOwner();
-    }
-    function UnknownOwner() {
-        return Error("react-stack-top-frame");
-    }
-    function hasValidKey(config) {
-        if (hasOwnProperty.call(config, "key")) {
-            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
-            if (getter && getter.isReactWarning) return !1;
-        }
-        return void 0 !== config.key;
-    }
-    function defineKeyPropWarningGetter(props, displayName) {
-        function warnAboutAccessingKey() {
-            specialPropKeyWarningShown || (specialPropKeyWarningShown = !0, console.error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)", displayName));
-        }
-        warnAboutAccessingKey.isReactWarning = !0;
-        Object.defineProperty(props, "key", {
-            get: warnAboutAccessingKey,
-            configurable: !0
-        });
-    }
-    function elementRefGetterWithDeprecationWarning() {
-        var componentName = getComponentNameFromType(this.type);
-        didWarnAboutElementRef[componentName] || (didWarnAboutElementRef[componentName] = !0, console.error("Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."));
-        componentName = this.props.ref;
-        return void 0 !== componentName ? componentName : null;
-    }
-    function ReactElement(type, key, self, source, owner, props, debugStack, debugTask) {
-        self = props.ref;
-        type = {
-            $$typeof: REACT_ELEMENT_TYPE,
-            type: type,
-            key: key,
-            props: props,
-            _owner: owner
-        };
-        null !== (void 0 !== self ? self : null) ? Object.defineProperty(type, "ref", {
-            enumerable: !1,
-            get: elementRefGetterWithDeprecationWarning
-        }) : Object.defineProperty(type, "ref", {
-            enumerable: !1,
-            value: null
-        });
-        type._store = {};
-        Object.defineProperty(type._store, "validated", {
-            configurable: !1,
-            enumerable: !1,
-            writable: !0,
-            value: 0
-        });
-        Object.defineProperty(type, "_debugInfo", {
-            configurable: !1,
-            enumerable: !1,
-            writable: !0,
-            value: null
-        });
-        Object.defineProperty(type, "_debugStack", {
-            configurable: !1,
-            enumerable: !1,
-            writable: !0,
-            value: debugStack
-        });
-        Object.defineProperty(type, "_debugTask", {
-            configurable: !1,
-            enumerable: !1,
-            writable: !0,
-            value: debugTask
-        });
-        Object.freeze && (Object.freeze(type.props), Object.freeze(type));
-        return type;
-    }
-    function jsxDEVImpl(type, config, maybeKey, isStaticChildren, source, self, debugStack, debugTask) {
-        var children = config.children;
-        if (void 0 !== children) {
-            if (isStaticChildren) {
-                if (isArrayImpl(children)) {
-                    for(isStaticChildren = 0; isStaticChildren < children.length; isStaticChildren++)validateChildKeys(children[isStaticChildren]);
-                    Object.freeze && Object.freeze(children);
-                } else console.error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
-            } else validateChildKeys(children);
-        }
-        if (hasOwnProperty.call(config, "key")) {
-            children = getComponentNameFromType(type);
-            var keys = Object.keys(config).filter(function(k) {
-                return "key" !== k;
-            });
-            isStaticChildren = 0 < keys.length ? "{key: someKey, " + keys.join(": ..., ") + ": ...}" : "{key: someKey}";
-            didWarnAboutKeySpread[children + isStaticChildren] || (keys = 0 < keys.length ? "{" + keys.join(": ..., ") + ": ...}" : "{}", console.error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', isStaticChildren, children, keys, children), didWarnAboutKeySpread[children + isStaticChildren] = !0);
-        }
-        children = null;
-        void 0 !== maybeKey && (checkKeyStringCoercion(maybeKey), children = "" + maybeKey);
-        hasValidKey(config) && (checkKeyStringCoercion(config.key), children = "" + config.key);
-        if ("key" in config) {
-            maybeKey = {};
-            for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
-        } else maybeKey = config;
-        children && defineKeyPropWarningGetter(maybeKey, "function" === typeof type ? type.displayName || type.name || "Unknown" : type);
-        return ReactElement(type, children, self, source, getOwner(), maybeKey, debugStack, debugTask);
-    }
-    function validateChildKeys(node) {
-        "object" === typeof node && null !== node && node.$$typeof === REACT_ELEMENT_TYPE && node._store && (node._store.validated = 1);
-    }
-    var React = require("58362d9d82be395f"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-    Symbol.for("react.provider");
-    var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
-        return null;
-    };
-    React = {
-        react_stack_bottom_frame: function(callStackForError) {
-            return callStackForError();
-        }
-    };
-    var specialPropKeyWarningShown;
-    var didWarnAboutElementRef = {};
-    var unknownOwnerDebugStack = React.react_stack_bottom_frame.bind(React, UnknownOwner)();
-    var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
-    var didWarnAboutKeySpread = {};
-    exports.Fragment = REACT_FRAGMENT_TYPE;
-    exports.jsxDEV = function(type, config, maybeKey, isStaticChildren, source, self) {
-        var trackActualOwner = 1e4 > ReactSharedInternals.recentlyCreatedOwnerStacks++;
-        return jsxDEVImpl(type, config, maybeKey, isStaticChildren, source, self, trackActualOwner ? Error("react-stack-top-frame") : unknownOwnerDebugStack, trackActualOwner ? createTask(getTaskName(type)) : unknownOwnerDebugTask);
-    };
-})();
+try {
+// Named Export
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Title", ()=>Title);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        href: "/",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "logo",
+            src: "https://lh3.googleusercontent.com/Em7AHf7XBH_RtGfCBVXz9RH8SM_pHkj3xPP-yd3cRguY1_Jc8fmqgx6WxnvGVyPV5xs5gL3HCD0FCuv6Xo4CwoY6ak4=w256-rw",
+            alt: "logo"
+        }, void 0, false, {
+            fileName: "src/components/Header.js",
+            lineNumber: 3,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Header.js",
+        lineNumber: 2,
+        columnNumber: 28
+    }, undefined);
+_c = Title;
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 13,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Header.js",
+        lineNumber: 6,
+        columnNumber: 10
+    }, undefined);
+};
+_c1 = Header;
+// Default export
+exports.default = Header;
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "Header");
 
-},{"58362d9d82be395f":"jMk1U"}],"giGSC":[function() {},{}]},["icAAj","blcJa"], "blcJa", "parcelRequire164e", {}, null, null, "http://localhost:1234")
+  $parcel$ReactRefreshHelpers$d118.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lq1kZ":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$a646 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$a646.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a646.prelude(module);
 
-//# sourceMappingURL=Namaste-react.cb65f72e.js.map
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "Footer"
+    }, void 0, false, {
+        fileName: "src/components/Footer.js",
+        lineNumber: 2,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$a646.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"loQlg":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$8a58 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$8a58.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8a58.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _constants = require("../constants");
+var _resturantCard = require("./ResturantCard");
+var _resturantCardDefault = parcelHelpers.interopDefault(_resturantCard);
+var _s = $RefreshSig$();
+// Our filter data lagorithm
+function filterData(searchText, searchRestaurantList) {
+    if (searchText === "") return searchRestaurantList;
+    const filteredData = searchRestaurantList.filter((restaurant)=>restaurant.card.info.name.includes(searchText));
+    return filteredData;
+}
+const Body = ()=>{
+    _s();
+    //  searchText is a local state variable - destructuring in an array
+    // const [searchClick, setSearchClick] = useState("False") just for fun
+    const [searchText, setSearchText] = (0, _react.useState)(""); // To Create State Variable. useState() returns Array
+    const [searchRestaurantList, setSearchRestaurantList] = (0, _react.useState)((0, _constants.restaurantList)); // giving default value as ouor dummy data
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "search-input",
+                        type: "text",
+                        placeholder: "Search",
+                        value: searchText,
+                        onChange: (e)=>{
+                            // e.target.value => whatever you write in input box
+                            setSearchText(e.target.value);
+                        }
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "search-btn",
+                        onClick: ()=>{
+                            // Need to filter the data. When apply filter we have make update my restaurantList. but i cann't update it directly i have to maintain a state for this.
+                            // update the state - searchRestaurantList
+                            const data = filterData(searchText, searchRestaurantList); // giving you search value and all my data searchRestaurantList -> is me se find kr k lao searched value
+                            setSearchRestaurantList(data); // and update my data list searchRestaurantList
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "resturant-list",
+                children: searchRestaurantList.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _react.createElement)((0, _resturantCardDefault.default), {
+                        ...restaurant.card.info,
+                        key: restaurant.card.info.id,
+                        __source: {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 52,
+                            columnNumber: 16
+                        },
+                        __self: undefined
+                    }); // Passing props
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(Body, "3CWbv+LL/nnE1eHkdYqos4ggMR4=");
+_c = Body;
+exports.default = Body; // There is only one way data binding in REACT
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$8a58.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../constants":"6Q7L8","./ResturantCard":"lkkHX"}],"6Q7L8":[function(require,module,exports,__globalThis) {
+// Put All hard  coded things inside the config file its a goof convention to do this things
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
+parcelHelpers.export(exports, "restaurantList", ()=>restaurantList);
+const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fill/";
+const restaurantList = [
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391100",
+                "name": "Indori pizza 8 inches ",
+                "category": "Pizza",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/19/bc7c1f78-3d4a-4729-95de-29b13e6d19b5_6a35dc3a-44a8-4429-9859-eed528342aa6.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 16900,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "99114152"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391096",
+                "name": "Garlic pizza 8 inches ",
+                "category": "Pizza",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/24/5d9f4d70-ab7d-4df5-a083-64d434e90314_70db7115-cd2c-4c68-adcb-55bd9eff9ac9.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 17500,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "99114151"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391117",
+                "name": "Brownie chocolate shake",
+                "category": "Chocolate Shake",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/b175b287-5aee-42dd-bcf3-dce9e5cfa29d_6e0673a8-ce3a-4276-ba5f-6f9fbefac0a5.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 16000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "33335116"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391112",
+                "name": "Crunchy chocolate shake",
+                "category": "Chocolate Shake",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/b5d4509a-a216-4d5b-8d4a-565713837ba5_7a40712d-7036-4802-966f-06deec1a4b40.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 14500,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "33335155"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391110",
+                "name": "Dark chocolate shake",
+                "category": "Chocolate Shake",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/5e05da78-2c53-4f5f-8ee3-79f226c600b7_aa3ccb72-12a8-47fc-9574-9e9a2801a3dc.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 13000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "33335157"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391113",
+                "name": "Energy chocolate shake",
+                "category": "Chocolate Shake",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/19/39700056-2ac7-4cc2-b1c7-984acae08acb_0b83f445-a96d-47dc-99d6-8eaecb22e953.jpeg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 14000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "33335170"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391122",
+                "name": "Veg manchurian",
+                "category": "Chinese Menu",
+                "description": "A flavorful and savory blend of vegetables in a delicious, savory sauce.",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/24/d2889741-4da4-4039-835c-d1c507e20dd3_476bbfac-71dc-49ff-8355-c2b74d8814e1.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 14500,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {
+                    "text": "Bestseller",
+                    "textColor": "#ffffff",
+                    "topBackgroundColor": "#d53d4c",
+                    "bottomBackgroundColor": "#b02331"
+                },
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "isBestseller": true,
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "5.0",
+                        "ratingCount": "3 ratings",
+                        "ratingCountV2": "3"
+                    },
+                    "ratingsPresentationConfig": {
+                        "bgGradient": {
+                            "colours": [
+                                "#C8F9E5",
+                                "#FFFFFF"
+                            ],
+                            "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                        },
+                        "ratingIconColor": "rating_very_good",
+                        "ratingTextColor": "rating_very_good",
+                        "ratingCountTextColor": "rating_very_good",
+                        "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                        "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                    }
+                },
+                "parentId": "50243796"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391126",
+                "name": "Fried rice",
+                "category": "Chinese Menu",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/19/65263b26-0e14-4010-8461-b587458aeb40_7a715270-e1be-4c81-9501-6554a7f703e1.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 14000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "50243760"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "161391128",
+                "name": "Veg hakka noodles",
+                "category": "Chinese Menu",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/19/1268417d-4762-4de7-8839-c06e4441f674_0c7e4ddd-c7fa-4979-8da5-7ce185afdcd1.jpg",
+                "inStock": 1,
+                "isVeg": 1,
+                "price": 14000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "showImage": true,
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                },
+                "parentId": "33335336"
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lkkHX":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9c94 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9c94.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9c94.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../constants");
+// getting props on the fly
+const ResturantCard = ({ price, category, name, imageId })=>{
+    // console.log(restaurant);
+    //  Destructuring this restaurant. Its good but what i want now is want destructuring in parameters
+    // const {imageId, name, category, price} = restaurant.card.info;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: (0, _constants.IMG_CDN_URL) + imageId,
+                alt: "Burger"
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: category
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: price
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.js",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ResturantCard.js",
+        lineNumber: 15,
+        columnNumber: 10
+    }, undefined);
+};
+_c = ResturantCard;
+exports.default = ResturantCard;
+var _c;
+$RefreshReg$(_c, "ResturantCard");
+
+  $parcel$ReactRefreshHelpers$9c94.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["frqA7","hh6uc"], "hh6uc", "parcelRequire164e", {}, null, null, "http://localhost:1234")
+
+//# sourceMappingURL=Namaste-react.2c54e4d8.js.map
