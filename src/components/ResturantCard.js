@@ -2,7 +2,7 @@ import { IMG_CDN_URL } from "../constants"
 
 
 // getting props on the fly
-const ResturantCard = ({price, category, name, imageId}) => {
+const ResturantCard = ({defaultPrice, category, name, imageId, price}) => {
   // console.log(restaurant);
 
 
@@ -11,10 +11,10 @@ const ResturantCard = ({price, category, name, imageId}) => {
   
   return(
     <div className="card">
-      <img src={IMG_CDN_URL + imageId} alt="Burger"/>
+      <img src={IMG_CDN_URL + imageId} alt={name}/>
       <h2>{name}</h2>
       <h3>{category}</h3>
-      <h4>{price}</h4>
+      <h3> {defaultPrice ?? price} </h3>  {/* Or we can  use ternanry operator : <h4>{ defaultPrice ? defaultPrice :  price}</h4> */}
     </div>
   )
 }
