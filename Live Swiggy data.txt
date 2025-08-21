@@ -1,0 +1,12 @@
+https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.99740&lng=79.00110&restaurantId=1003414&catalog_qa=undefined&submitAction=ENTER#
+
+
+caosn dataArray = data.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card.card.itemCards; // Array of objects where data is store
+
+card.info.id;
+card.info.name;
+card.info.category;
+card.info.defaultPrice;
+card.info.imageId;
+
+BASE_IMAGE_URL = https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/

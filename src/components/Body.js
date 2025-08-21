@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { restaurantList, SWIGGY_PIZZA_HUT_API } from "../constants";
+import { restaurantList, SWIGGY_RESTUARANT_API } from "../constants";
 import ResturantCard from "./ResturantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 // Our filter data lagorithm
@@ -38,11 +39,12 @@ const  Body = () => {
   }, [] )
 
   async function getSwiggyData() {
-    const data = await fetch(SWIGGY_PIZZA_HUT_API)
+    const data = await fetch(SWIGGY_RESTUARANT_API)
     const jsonData = await data.json();
-    // console.log(jsonData);
-    setAllRestaurants(jsonData?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards)
-    setFilteredRestaurant(jsonData?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards)
+    const restaurantCards = jsonData?.data?.cards?.slice(3);
+    console.log(restaurantCards);
+    setAllRestaurants(restaurantCards)
+    setFilteredRestaurant(restaurantCards)
   }
 
   console.log("render UI");
@@ -54,10 +56,10 @@ const  Body = () => {
   // not render component (Early retrun)
   if (!allRestaurants) return null;
 
-  if (filteredRestaurant?.length === 0)
-      return <h1>No Such Restaurant Found.</h1>
+  // if (filteredRestaurant?.length === 0)
+  //     return <h1>No Such Restaurant Found.</h1>
 
-  return allRestaurants?.length === 0 ? (
+  return allRestaurants.length === 0 ? (
     <Shimmer/>
   ) : (
       <>
@@ -85,7 +87,7 @@ const  Body = () => {
             >Search</button>
         </div>
 
-        <div className="resturant-list">
+        <div className="restuarant-list">
           {/* <ResturantCard restaurant = {restaurantList[0]}/> OLD way to pass props same  for  all*/}
 
           {/* <ResturantCard {...restaurantList[0].card.info}/>  Passing props by spread operator 
@@ -102,7 +104,10 @@ const  Body = () => {
           { 
             // {/* You have to write logic for no restaurant found here.First Shrimmer than Not found message. */}
             filteredRestaurant.map( (restaurant) => {
-              return <ResturantCard {...restaurant.card.info} key={restaurant.card.info.id}/> // Passing props
+              return <Link to={"/restuarant/"+restaurant?.card?.card?.info?.id}
+                          key={restaurant?.card?.card?.info?.id}>
+                        <ResturantCard {...restaurant?.card?.card?.info}  />
+                     </Link> 
             } )
           }
         </div>

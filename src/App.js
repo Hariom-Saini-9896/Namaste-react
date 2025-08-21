@@ -5,6 +5,11 @@ import { Title } from "./components/Header"; // Named Import include {} otherwis
 import * as Obj from "./components/Header"; // If you want to import everything from Header.js and Use it like obj.Title
 import Footer from "./components/Footer";
 import Body from "./components/Body";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import About from "./components/pages/About";
+import Error from "./components/Error";
+import Contact from "./components/pages/Contact";
+import RestuarantMenu from "./components/RestuarantMenu";
 
 
 // done by pure JS
@@ -100,22 +105,51 @@ import Body from "./components/Body";
 // }
 
 
-const ApplayOut = () => {
+
+
+const Applayout = () => {
   return (
     <>
       <>
       {/* <Obj.Title/>
       <Title/> */}
       <Header/>
-      <Body/>
+      <Outlet/>
       <Footer/>
       </>
     </>
   )
 }
 
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Applayout/>,
+    errorElement: <Error/>,
+    children: [
+      {
+        path: "/",
+        element: <Body/>
+      },
+      {
+        path: "/about",
+        element: <About/>
+      },
+      {
+        path: "/contact",
+        element: <Contact/>
+      },
+      {
+        path: "/restuarant/:restuarantId",
+        element: <RestuarantMenu/>
+      }
+    ]
+  },
+])
+
 const root = ReactDOM.createRoot(document.getElementById("root")) // the root element for this h1 element is the div with id = root. and works aas root element for this h1 element
-root.render(<ApplayOut key={"app-layout"}/>) // this render function injects this heading elements inside the DOM and its render over the browser window. Render is used to modify our DOMand it overwrite the stuff inside root element.
+root.render(<RouterProvider router={appRouter} />) // this render function injects this heading elements inside the DOM and its render over the browser window. Render is used to modify our DOMand it overwrite the stuff inside root element.
 
 
 

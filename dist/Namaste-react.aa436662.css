@@ -29,8 +29,21 @@
   width: 100%;
 }
 
-.resturant-list {
+.restuarant-list {
   flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: #d3d3d3;
+  border: 1px solid #000;
+  width: 10rem;
+  height: 15rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.menu {
   display: flex;
 }
 /*# sourceMappingURL=Namaste-react.aa436662.css.map */

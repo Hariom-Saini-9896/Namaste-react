@@ -4,3 +4,10 @@ React.createElement() => gives us Object containig all the information about the
 JSX is not HTML, its html  like syntax.
 In JSX for styling we use camelCasing like; <h1 id = "title" tabIndex = "1" className  = "hello">Hello world.</h1>
 And class is like className
+
+
+
+
+// Types of routing 
+   1. Client side routing : (In React App) All pages resides in our REACT App.
+   2. Server side routing : Is the way that all our pages comes form server.
