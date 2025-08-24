@@ -11,3 +11,7 @@ And class is like className
 // Types of routing 
    1. Client side routing : (In React App) All pages resides in our REACT App.
    2. Server side routing : Is the way that all our pages comes form server.
+
+
+
+// Outlet hmesha parent component kandr bnana h.

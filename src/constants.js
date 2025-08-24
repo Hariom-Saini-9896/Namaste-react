@@ -1,4 +1,4 @@
-// Put All hard  coded things inside the config file its a goof convention to do this things
+// Put All hard  coded things inside the config file its a good convention to do this things
 export const SWIGGY_RESTUARANT_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=29.407077&lng=76.982517&collection=83648&tags=layout_CCS_Burger&sortBy=&filters=&type=rcv2&offset=0&page_type=null"
 
 export const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/";

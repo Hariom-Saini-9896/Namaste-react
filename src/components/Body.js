@@ -3,10 +3,9 @@ import { restaurantList, SWIGGY_RESTUARANT_API } from "../constants";
 import ResturantCard from "./ResturantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnline from './utils/useOnline'
 
-
-// Our filter data lagorithm
-
+// Our filter data algorithm
 function filterData(searchText, searchRestaurantList){
   // if(searchText === "") return searchRestaurantList;
 
@@ -23,7 +22,7 @@ const  Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]) // its keeping all restaurants. we set by api in useEffect
   const [filteredRestaurant, setFilteredRestaurant] = useState([]) // Its keeping all filtered restaurants
   const [searchText, setSearchText] = useState(""); // To Create State Variable. useState() returns Array
-
+  const  isOnline = useOnline()
 
   // empty dependancy array => once after render
   // dep array [searchText] => once after initial render + everytime render (when dependancy changes Here. searchText)
@@ -45,6 +44,11 @@ const  Body = () => {
     console.log(restaurantCards);
     setAllRestaurants(restaurantCards)
     setFilteredRestaurant(restaurantCards)
+  }
+
+
+  if(!isOnline){
+    return <h1>🔴 Something went wrong, Please check your internet connection.</h1>
   }
 
   console.log("render UI");

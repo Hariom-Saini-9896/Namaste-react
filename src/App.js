@@ -10,7 +10,16 @@ import About from "./components/pages/About";
 import Error from "./components/Error";
 import Contact from "./components/pages/Contact";
 import RestuarantMenu from "./components/RestuarantMenu";
+import Profile from "./components/pages/Profile";
+import ProfileCLassComponent from './components/pages/ProfileClass'
+import { lazy, Suspense } from "react";
+import Shimmer from "./components/Shimmer";
+// import Instamart from "./components/Instamart"; For lazy loading don't do import like this
 
+
+// Lecture 09: lazy loading, On demand loading, chunking, dynamic loading
+const Instamart = lazy( () => import("./components/Instamart") ); // its a promise
+// Upon on demand loading ==> upon render ==> suspend loading
 
 // done by pure JS
 // const heading = document.createElement("h1");
@@ -134,7 +143,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About/>
+        element: <About/>,
+        children: [{
+          path: "profile",
+          element: [<Profile/>, <ProfileCLassComponent name = "Class Component" XYZ = "XYZ"/>]
+        }]
       },
       {
         path: "/contact",
@@ -143,6 +156,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/restuarant/:restuarantId",
         element: <RestuarantMenu/>
+      },
+      {
+        path: "/instamart",
+        element: (<Suspense fallback = {<Shimmer/>}>
+                    <Instamart/>
+                  </Suspense>) // mandatory for lazy loading
       }
     ]
   },
